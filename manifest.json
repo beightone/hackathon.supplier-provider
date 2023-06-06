@@ -1,7 +1,7 @@
 {
   "name": "supplier-provider-hackathon",
   "vendor": "vtexdayhackathon5",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "title": "Supplier Provider",
   "description": "Reference app for Supplier Provider Protocol usage",
   "mustUpdateAt": "2022-08-01",
