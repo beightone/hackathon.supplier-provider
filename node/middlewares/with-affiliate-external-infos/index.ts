@@ -14,15 +14,7 @@ export async function withAffiliateExternalInfos(
 
   try {
     const [affiliateExternalInfos] =
-      await externalAccountAffiliationClient.search(
-        {
-          page: 1,
-          pageSize: 10,
-        },
-        ['_all'],
-        undefined,
-        `affiliateId=${affiliateId}`
-      )
+      await externalAccountAffiliationClient.searchByAffiliateId(affiliateId)
 
     if (!affiliateExternalInfos) {
       response.status = 204

@@ -1,9 +1,9 @@
 import { IOClients } from '@vtex/api'
 import { masterDataFor } from '@vtex/clients'
 import type { Affiliates } from 'vtex.vtexday2023-hackathon-affiliates'
-import type { ExternalAccountAffiliation } from 'vtexdayhackathon5.affiliate-extension'
 
 import OMSClient from './OMS'
+import ExternalAccountAffiliationMasterdataClient from './masterdata'
 
 export class Clients extends IOClients {
   public get affiliates() {
@@ -19,10 +19,7 @@ export class Clients extends IOClients {
   public get externalAccountAffiliation() {
     return this.getOrSet(
       'externalAccountAffiliation',
-      masterDataFor<ExternalAccountAffiliation>(
-        'externalAccountAffiliation',
-        'vtexdayhackathon5.affiliate-extension@0.x'
-      )
+      ExternalAccountAffiliationMasterdataClient
     )
   }
 
