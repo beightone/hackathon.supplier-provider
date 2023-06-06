@@ -17,7 +17,7 @@
     "node": "6.x"
   },
   "scripts": {
-    "prereleasy": "bash lint.sh"
+    "postreleasy": "vtex publish --verbose"
   },
   "credentialType": "absolute",
   "policies": [
