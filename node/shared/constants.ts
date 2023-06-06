@@ -1,1 +1,1 @@
-export const DEFAULT_TIMEOUT = 800
+export const DEFAULT_TIMEOUT = 10 * 1000
