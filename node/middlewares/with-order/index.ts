@@ -7,8 +7,10 @@ export async function withOrder(ctx: Context, next: NextMiddleware) {
     clients: { oms: omsClient },
   } = ctx
 
+  const orderId = `${body.orderId}-01`
+
   try {
-    const order = await omsClient.order(body.orderId)
+    const order = await omsClient.order(orderId)
 
     ctx.state.order = order
   } catch (error) {
