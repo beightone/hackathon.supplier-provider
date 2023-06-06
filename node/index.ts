@@ -57,8 +57,8 @@ export default new Service({
               role: 'seller',
               amount: 0,
               commissionAmount: 0,
-              chargeProcessingFee: 'false',
-              chargebackLiable: 'false',
+              chargeProcessingFee: false,
+              chargebackLiable: false,
             },
           ]
 
