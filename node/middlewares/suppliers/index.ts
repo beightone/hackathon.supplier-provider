@@ -47,7 +47,7 @@ export async function suppliers(ctx: Context) {
     {
       id: 'mock',
       name: 'mocked',
-      amount: 38639,
+      amount: 15600,
       document: '1111',
       documentType: 'CNPJ',
       role: 'influencer',
