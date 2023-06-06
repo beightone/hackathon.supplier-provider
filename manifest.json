@@ -9,6 +9,9 @@
   "dependencies": {
     "vtex.recipients-builder": "1.x"
   },
+  "peerDependencies": {
+    "vtex.vtexday2023-hackathon-affiliates": "1.x"
+  },
   "builders": {
     "supplierProvider": "0.x",
     "node": "6.x"
@@ -23,6 +26,29 @@
     },
     {
       "name": "colossus-write-logs"
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "OMSViewer"
+    },
+    {
+      "name": "AcessaTodosPedidos"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/oms/pvt/orders/"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/dataentities/*"
+      }
     }
   ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

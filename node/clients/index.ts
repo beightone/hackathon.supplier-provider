@@ -1,10 +1,21 @@
 import { IOClients } from '@vtex/api'
+import { masterDataFor } from '@vtex/clients'
+import type { Affiliates } from 'vtex.vtexday2023-hackathon-affiliates'
 
-// import OMSClient from './oms'
+import OMSClient from './OMS'
 
-// Extend the default IOClients implementation with our own custom clients.
 export class Clients extends IOClients {
-  // public get oms() {
-  //   return this.getOrSet('oms', OMSClient)
-  // }
+  public get affiliates() {
+    return this.getOrSet(
+      'affiliates',
+      masterDataFor<Affiliates>(
+        'affiliates',
+        'vtex.vtexday2023-hackathon-affiliates@1.x'
+      )
+    )
+  }
+
+  public get oms() {
+    return this.getOrSet('oms', OMSClient)
+  }
 }
