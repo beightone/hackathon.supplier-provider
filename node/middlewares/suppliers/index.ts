@@ -17,7 +17,7 @@ export async function suppliers(ctx: Context) {
           affiliateAppSettings.defaultSkuCommissionValue) / 100
 
       const commissionValue =
-        currItem.value * currItem.quantity * skuCommissionPercentage
+        currItem.price * currItem.quantity * skuCommissionPercentage
 
       return totalCommission + commissionValue
     },
