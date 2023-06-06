@@ -32,11 +32,11 @@ export async function suppliers(ctx: Context) {
       name,
       document: affiliateExternalId,
       documentType: 'externalAccountId',
-      commissionAmount: affiliateAppSettings.defaultSkuCommissionValue,
+      // commissionAmount: affiliateAppSettings.defaultSkuCommissionValue,
       amount: totalSkusCommissions,
       role: 'affiliate',
-      chargebackLiable: false,
-      chargeProcesssingFee: false,
+      // chargebackLiable: false,
+      // chargeProcesssingFee: false,
     },
   ]
 
