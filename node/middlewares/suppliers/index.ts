@@ -3,6 +3,7 @@ export async function suppliers(ctx: Context) {
     state: {
       affiliateId,
       affiliateInfos,
+      affiliateExternalId,
       affiliateAppSettings,
       body: { miniCart },
     },
@@ -23,17 +24,17 @@ export async function suppliers(ctx: Context) {
     0
   )
 
-  const { name, document, documentType } = affiliateInfos
+  const { name } = affiliateInfos
 
   const orderSuppliers = [
     {
       id: affiliateId,
       name,
-      document,
-      documentType,
+      document: affiliateExternalId,
+      documentType: 'externalAccountId',
       commissionAmount: affiliateAppSettings.defaultSkuCommissionValue,
       amount: totalSkusCommissions,
-      role: 'influencer',
+      role: 'affiliate',
       chargebackLiable: false,
       chargeProcesssingFee: false,
     },

@@ -9,6 +9,7 @@ import {
   injectLogger,
   suppliers,
   withAffiliateAppSettings,
+  withAffiliateExternalInfos,
   withAffiliateId,
   withAffiliateInfos,
 } from './middlewares'
@@ -40,6 +41,7 @@ export default new Service({
         withOrder,
         withAffiliateId,
         withAffiliateInfos,
+        withAffiliateExternalInfos,
         withAffiliateAppSettings,
         suppliers,
       ],

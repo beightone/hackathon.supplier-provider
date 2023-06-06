@@ -1,5 +1,6 @@
 import type { ServiceContext, RecorderState } from '@vtex/api'
 
+import type { Clients } from '../clients'
 import type { Logger } from '../tools'
 
 declare global {
@@ -11,6 +12,7 @@ declare global {
     order: any
     affiliateId: string
     affiliateInfos: any
+    affiliateExternalId: string
     affiliateAppSettings: any
     body: any
   }

@@ -7,7 +7,8 @@
   "mustUpdateAt": "2022-08-01",
   "categories": [],
   "dependencies": {
-    "vtex.recipients-builder": "1.x"
+    "vtex.recipients-builder": "1.x",
+    "vtexdayhackathon5.affiliate-extension": "0.x"
   },
   "peerDependencies": {
     "vtex.vtexday2023-hackathon-affiliates": "1.x"

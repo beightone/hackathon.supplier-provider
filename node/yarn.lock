@@ -1572,9 +1572,13 @@ vary@^1.1.2:
   version "1.1.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.vtexday2023-hackathon-affiliates@1.1.0/public/@types/vtex.vtexday2023-hackathon-affiliates#d35d09d5c0b85a4dc3f3de82a6183401f8338e04"
 
-"vtexdayhackathon5.supplier-provider-hackathon@https://supplierextension--vtexdayhackathon5.myvtex.com/_v/private/typings/linked/v1/vtexdayhackathon5.supplier-provider-hackathon@0.1.0+build1686009579/public/_types/react":
+"vtexdayhackathon5.affiliate-extension@http://vtexdayhackathon5.vtexassets.com/_v/public/typings/v1/vtexdayhackathon5.affiliate-extension@0.0.5/public/@types/vtexdayhackathon5.affiliate-extension":
+  version "0.0.5"
+  resolved "http://vtexdayhackathon5.vtexassets.com/_v/public/typings/v1/vtexdayhackathon5.affiliate-extension@0.0.5/public/@types/vtexdayhackathon5.affiliate-extension#a4024c9eefae7abf0780bc6ecb066d86e60c7edd"
+
+"vtexdayhackathon5.supplier-provider-hackathon@http://vtexdayhackathon5.vtexassets.com/_v/public/typings/v1/vtexdayhackathon5.supplier-provider-hackathon@0.2.0/public/_types/react":
   version "0.0.0"
-  resolved "https://supplierextension--vtexdayhackathon5.myvtex.com/_v/private/typings/linked/v1/vtexdayhackathon5.supplier-provider-hackathon@0.1.0+build1686009579/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
+  resolved "http://vtexdayhackathon5.vtexassets.com/_v/public/typings/v1/vtexdayhackathon5.supplier-provider-hackathon@0.2.0/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
 
 wrappy@1:
   version "1.0.2"
