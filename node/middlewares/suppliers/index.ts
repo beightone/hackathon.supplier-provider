@@ -40,31 +40,6 @@ export async function suppliers(ctx: Context) {
     },
   ]
 
-  ;() => ({ orderSuppliers })
-
   response.status = 200
-  response.body = [
-    {
-      id: 'mock',
-      name: 'mocked',
-      amount: 15600,
-      document: '1111',
-      documentType: 'CNPJ',
-      role: 'influencer',
-      commissionAmount: 100,
-      chargebackLiable: false,
-      chargeProcesssingFee: false,
-    },
-    {
-      id: 'coinshop',
-      name: 'coinshop',
-      documentType: 'CNPJ',
-      document: '05314972000174',
-      role: 'seller',
-      amount: 0,
-      commissionAmount: 0,
-      chargeProcessingFee: 'false',
-      chargebackLiable: 'false',
-    },
-  ]
+  response.body = orderSuppliers
 }
